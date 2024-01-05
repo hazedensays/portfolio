@@ -103,6 +103,11 @@ body * {
     flex: 0 0 50%;
 }
 
+.cerEduWrap {
+    border-bottom: solid #ddd 1px;
+    padding-bottom: 3rem;
+}
+
 
 /* ================================= */
 #projects {
