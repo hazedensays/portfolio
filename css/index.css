@@ -108,9 +108,19 @@ body * {
     padding-bottom: 3rem;
 }
 
-
 /* ================================= */
 #projects {
     margin-top: 3rem;
 }
 
+.projectUL {
+    width: 100%;
+}
+
+.projectUL li {
+    width: 25%;
+}
+
+.projectUL li img {
+    width: 25%;
+}
