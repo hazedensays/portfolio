@@ -27,10 +27,6 @@ body * {
     margin-bottom: 1rem;
 }
 
-.wsPreWrap {
-    white-space: pre;
-}
-
 /* ================================= */
 
 .introHead {
@@ -46,7 +42,7 @@ body * {
 
 .introWrap {
     display: flex;
-    gap: 50px;
+    gap: 70px;
 }
 
 .introW1,
@@ -60,7 +56,7 @@ body * {
 }
 
 .skillsWrap {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     font-size: 15px;
 }
 
@@ -86,7 +82,7 @@ body * {
 }
 
 .trainDiv {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 /* ================================= */
@@ -114,13 +110,33 @@ body * {
 }
 
 .projectUL {
-    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 96%;
+    padding-left: 1.5rem;
+}
+
+.projectUL li:nth-of-type(1),
+.projectUL li:nth-of-type(2),
+.projectUL li:nth-of-type(3) {
+    margin-right: 0.7rem;
 }
 
 .projectUL li {
-    width: 25%;
+    border: solid #ddd 1px;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 24%;
+    list-style: none;
+}
+
+.projectUL li:hover {
+    border: solid #ddd 3px;
+    transition: 0.3s;
 }
 
 .projectUL li img {
-    width: 25%;
+    width: 100%;
 }
