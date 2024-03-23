@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChanmiKim Portfolio | Backend Project</title>
+    <link rel="stylesheet" href="../css/projects/tbtConceptAdmin.css">
+    <link rel="stylesheet" href="../css/projects/tbtConceptTotal.css">
+</head>
+
+<body>
+    <div id="wrapP3">
+        <div class="sP3title">Board | Personal Project</div>
+
+        <div class="sP3subtitle">게시글(CRUD), 계층형 무한 댓글</div>
+
+        <div class="detailP3Container">
+            <div>🔎 Board Create, Update </div>
+
+            <div class="containerP3Video">
+                <div>
+                    <video controls type="video/mp4">
+                        <source src="../videos/writeBoard.mp4">
+                    </video>
+                </div>
+
+                <div class="videoP3Contents">
+                    <p>게시물 등록 및 수정</p>
+                    <p>😎 로그인 했을 경우에만 게시글 작성 가능
+                        <br /><br />
+                        😎 자신이 작성한 게시글에만<br />
+                        수정, 삭제 가능하도록 구현
+                        <br /><br />
+                        😎 게시글 수정 시에 수정한 날짜 DB에 저장
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailP3Container">
+            <div>🔎 Board Likes</div>
+
+            <div class="containerP3Video">
+                <div>
+                    <video controls type="video/mp4">
+                        <source src="../videos/likes.mp4">
+                    </video>
+                </div>
+
+                <div class="videoP3Contents">
+                    <p>게시글 "좋아요" 기능</p>
+                    <p>😎 토글 방식으로 구현
+                        <br /><br />
+                        😎 동일한 게시물에 중복 "좋아요" 불가
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailP1Container">
+            <div>- Likes table</div>
+
+            <div class="containerIMG">
+                <div>
+                    <img src="../images/boardLikes.png" alt="boardLikes.png"/>
+                </div>
+                
+                <div>
+                    <img src="../images/likesTable.png" alt="boardLikes.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailP3Container">
+            <div>🔎 Board Comments</div>
+
+            <div class="containerP3Video">
+                <div>
+                    <video controls type="video/mp4">
+                        <source src="../videos/comments.mp4">
+                    </video>
+                </div>
+
+                <div class="videoP3Contents">
+                    <p>계층형 무한 댓글</p>
+                    <p>😎 계층에 따라서 댓글의 깊이가 정해짐
+                        <br /><br />
+                        😎 본인 댓글만 수정, 삭제 가능하며<br />
+                        한번 삭제한 댓글은 수정, 삭제가 불가능하도록 구현<br />
+                        (DB에 수정, 삭제한 날짜를 저장 - 논리적 삭제)
+                        <br /><br />
+                        😎 해당 게시글 삭제 시에 게시글에 달렸던 모든 댓글이 삭제 처리<br />
+                        (논리적 삭제로 테이블에 삭제 여부와 삭제 시간이 저장됨)
+                        <br /><br />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailP1Container">
+            <div>- Comments table</div>
+
+            <div class="containerIMG">
+                <div>
+                    <img src="../images/commentsTable1.png" alt="comments.png"/>
+                </div>
+                
+                <div>
+                    <img src="../images/commentsTable2.png" alt="comments.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailP3Container">
+            <div>🔎 Board Delete</div>
+
+            <div class="containerP3Video">
+                <div>
+                    <video controls type="video/mp4">
+                        <source src="../videos/boardDelete.mp4">
+                    </video>
+                </div>
+
+                <div class="videoP3Contents">
+                    <p>게시글 삭제</p>
+                    <p>😎 본인이 작성한 게시글만 삭제 가능
+                        <br /><br />
+                        😎 논리적 삭제로 board_delyn 컬럼의 값에 따라서<br />
+                        BoardList에 출력 여부를 결정함
+                        <br /><br />
+                        😎 게시물이 삭제되면 board_delyn의 값은 N에서 Y로 바뀌며<br />
+                        DB에 삭제된 날짜 및 시간이 저장됨 (QueryDSL 이용)
+                        <br /><br />
+                        😎 해당 게시글 삭제 시에 게시글에 달렸던 모든 댓글이 삭제 처리<br />
+                        (논리적 삭제로 Comments 테이블에 삭제 여부와 삭제 시간이 저장됨)
+                        <br /><br />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
